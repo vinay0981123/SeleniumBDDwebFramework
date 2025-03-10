@@ -25,7 +25,13 @@ public class Steps extends PageObjectManager {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-        login = new LoginPage(driver);
+//            login = new LoginPage(driver);
+            driver.get("https://demoqa.com/");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
         }
 
