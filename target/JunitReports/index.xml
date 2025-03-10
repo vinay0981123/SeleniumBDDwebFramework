@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.44">
-    <testcase classname="Login" name="Successful login with valid credential" time="4.318">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.984">
+    <testcase classname="Login" name="Successful login with valid credential" time="4.859">
         <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User launch chrome browser............................................passed
 When User opens Url.........................................................undefined
 And User enters Email and password..........................................skipped

@@ -16,12 +16,13 @@ public class LoginPage {
         PageFactory.initElements(ldriver , this);
     }
 
-    public void clickOnMyCurrentRole(){
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        lnkMyCurrentRole.click();
+    public void enterUsername(){
+
+    }
+    public void enterPassword(){
+
+    }
+    public void btnLogin(){
+
     }
 }
