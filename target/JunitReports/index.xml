@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.984">
-    <testcase classname="Login" name="Successful login with valid credential" time="4.859">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User launch chrome browser............................................passed
-When User opens Url.........................................................undefined
-And User enters Email and password..........................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.111">
+    <testcase classname="Login" name="Successful login with valid credential" time="5.871">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because &quot;this.password&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User launch chrome browser............................................passed
+When User opens Url.........................................................passed
+And User enters Email and password..........................................failed
 And click on login..........................................................skipped
 And close browser...........................................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.password" is null
+	at pageObjects.LoginPage.enterPassword(LoginPage.java:31)
+	at StepDefinitions.Steps.user_enters_email_and_password(Steps.java:40)
+	at ✽.User enters Email and password(file:///home/vinay/Desktop/Automation/SeleniumBDDwebFramework/src/test/resources/Features/Login.feature:7)
 ]]></failure>
     </testcase>
 </testsuite>

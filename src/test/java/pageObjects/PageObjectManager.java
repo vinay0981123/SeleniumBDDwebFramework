@@ -11,5 +11,4 @@ public class PageObjectManager {
     public LoginPage login;
 
 
-
 }
